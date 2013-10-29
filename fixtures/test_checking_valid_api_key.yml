@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.hipchat.com/v2/room?auth_test=true
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 202
+      message: Accepted
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache="set-cookie"
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 29 Oct 2013 17:04:55 GMT
+      Server:
+      - nginx
+      Set-Cookie:
+      - AWSELB=4B417D29167379B88359E270231A3CFDBDD5CC2E9ABED561D99963CAB1F6827D40256A34B2FA122A38B24C8BF70FD42079DB1BB8BEC943BCA156E17F71EAC008D860CA6AC8;PATH=/
+      X-Ratelimit-Limit:
+      - '100'
+      X-Ratelimit-Remaining:
+      - '98'
+      X-Ratelimit-Reset:
+      - '1383066300.0'
+      Content-Length:
+      - '107'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"success": {"code": 202, "message": "This auth_token has access to
+        use this method.", "type": "Accepted"}}'
+    http_version: 
+  recorded_at: Tue, 29 Oct 2013 17:04:56 GMT
+recorded_with: VCR 2.4.0

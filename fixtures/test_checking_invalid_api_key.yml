@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.hipchat.com/v2/room?auth_test=true&auth_token=ABCDE
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache="set-cookie"
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 29 Oct 2013 17:06:20 GMT
+      Server:
+      - nginx
+      Set-Cookie:
+      - AWSELB=4B417D29167379B88359E270231A3CFDBDD5CC2E9A172868FC3098742834CC9801FA10FC0A93A08DE44EE4622161227D458AE538C05E594C19953F2D93D5455CA552C26B01;PATH=/
+      Content-Length:
+      - '104'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "error": {
+            "code": 401,
+            "message": "Invalid OAuth session",
+            "type": "Unauthorized"
+          }
+        }
+    http_version: 
+  recorded_at: Tue, 29 Oct 2013 17:06:21 GMT
+recorded_with: VCR 2.4.0
